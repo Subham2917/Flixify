@@ -7,8 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
-import sebara from "../../assets/9sebara.svg";
+import Vistiq from "../../assets/Vistiq.png";
 import flixify from "../../assets/flixify.png"
 import Img from "../lazyLoader/img";
 
@@ -85,7 +84,7 @@ const Header = () => {
         <header className={`header ${mobileMenu ? "mobileView" :""} ${show}`}>
             <ContentWrapper>
                 <div className="logo" onClick={()=>navigate("/")}>
-                    <img src={flixify} alt="" />
+                    <img src={Vistiq} alt="" />
                 </div>
                 <ul className="menuItems">
                     <li className="menuItem" onClick={() => navigationHandler("movie")}>Movies</li>
